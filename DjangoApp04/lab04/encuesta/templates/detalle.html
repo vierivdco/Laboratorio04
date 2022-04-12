@@ -1,0 +1,10 @@
+<h1>{{ region.nombre }}</h1>
+
+<ul>
+{% for candidato in region.candidato_set.all %}
+    <li>{{  }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'encuesta:detalle' region.id%}">¿Votar de Nuevo?</a>
+<a href="{% url 'encuesta:index' %}">Ver candidatos</a>
